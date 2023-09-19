@@ -1,0 +1,186 @@
+ @media all and (min-width: 991px){
+     .header-menu {
+         display: block !important;
+    }
+     .menu-button {
+         display: none;
+    }
+     .hide {
+         display: none 
+    }
+}
+ @media all and (max-width: 991px){
+     .header-menu {
+         position: relative;
+         display: none;
+    }
+     body {
+         padding: 0 1.5rem;
+    }
+     .header-menu ul {
+         position: absolute;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+         flex-direction: column;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         justify-content: center;
+         background: #808080;
+         top: -2rem;
+         left: -10rem;
+         width: 40rem;
+         padding: 10rem 0rem 4rem 0rem;
+         z-index: 555555;
+    }
+     .menu-button {
+         font-size: 3rem;
+         color: white;
+         display: block;
+         cursor: pointer;
+    }
+     .hide {
+         z-index: 9999999;
+         position: absolute;
+         top: 7px;
+         right: -25rem;
+         font-size: 3rem;
+         color: white;
+         display: block;
+         cursor: pointer;
+    }
+     .about-content {
+         padding-top: 2rem;
+    }
+     .progress {
+         width: 100%;
+    }
+     .service-text p {
+         padding: 0 0rem;
+    }
+    .header-menu ul li a{
+        margin:  1rem 0rem;
+    }
+    .service-icon {
+    font-size: 3.5rem;
+}
+
+
+
+}
+ @media all and (max-width: 767px){
+     .header-menu ul {
+         top: -2rem;
+         left: -10rem;
+         width: 32rem;
+    }
+     .hide {
+         top: -11px;
+         right: -19rem;
+         font-size: 3rem;
+    }
+     .swiper .swiper-slide .banner_center h1 {
+         font-size: 2em;
+    }
+     .swiper .swiper-slide .banner_center {
+         padding: 11rem 0;
+    }
+     .portfolio-controls {
+         padding: 5rem 0rem;
+    }
+     .portfolio-controls ul {
+         -ms-flex-wrap: wrap;
+         flex-wrap: wrap;
+         -webkit-box-orient: horizontal;
+         -webkit-box-direction: normal;
+         -ms-flex-direction: row;
+         flex-direction: row;
+    }
+     .portfolio-controls ul li {
+         padding: .7rem 0;
+    }
+     .portfolio-area {
+         -ms-grid-columns: (1fr)[3];
+         grid-template-columns: repeat(3, 1fr);
+    }
+     .services-area {
+         display: -ms-grid;
+         display: grid;
+         -ms-grid-columns: 1fr 2.2rem 1fr;
+         grid-template-columns: repeat(2,1fr);
+         gap: 2.2rem;
+    }
+     .service {
+         width: 100%;
+    }
+}
+ @media all and (max-width: 575px){
+     .hide {
+         top: -11px;
+         right: -14rem;
+         font-size: 3rem;
+    }
+     .services-area {
+         display: -ms-grid;
+         display: grid;
+         -ms-grid-columns: (1fr)[1];
+         grid-template-columns: repeat(1,1fr);
+    }
+     .service {
+         width: 100%;
+    }
+     textarea {
+         width: 100%;
+    }
+     .form-message input {
+         padding-top: 3rem;
+    }
+}
+ @media all and (max-width: 480px){
+     .header-menu ul {
+         top: 3rem;
+         left: -23rem;
+         width: 32rem;
+    }
+     .hide {
+         top: 38px;
+         right: -6rem;
+         font-size: 3rem;
+    }
+     .swiper .swiper-slide .banner_center h1 {
+         font-size: 1.8em;
+         line-height: 2.7rem;
+    }
+     .portfolio-area {
+         -ms-grid-columns: (1fr)[2];
+         grid-template-columns: repeat(2, 1fr);
+    }
+     .form-name {
+         -ms-grid-columns: (1fr)[1];
+         grid-template-columns: repeat(1, 1fr);
+    }
+     .form-name input {
+         padding-top: 4rem;
+    }
+     .social-icon {
+         padding: 0;
+         padding-top: 5rem;
+    }
+     .coppy-write-area {
+         padding-top: 3rem;
+    }
+     .form-message {
+         margin-bottom: 0;
+         padding-bottom: 4rem;
+    }
+     .about-soniya, .read a {
+         padding: 0 0rem;
+    }
+     .service p {
+         padding: 0 1rem;
+    }
+}
+ 

@@ -1,0 +1,653 @@
+/* Template Name: Above Template
+ URI: https://coderitsolution.com;
+ Author: Shahalom. 
+ Author URL: https://ashik.me 
+ Description:This is Above template 
+ Tags: Above website, html template, PSD to html 
+ Version: 1.0.0 
+
+ Table of Content 
+ ================ 
+ ** Default CSS ** 
+ 1: Header Area 
+ 2: About Area 
+ 3: Progressbar Area 
+ 4: Section_work Area 
+ 5: service Area 
+ 6: Footer Area;
+ */
+/*Default CSS*/
+ html{
+     font-size: 62.5%;
+}
+ body{
+     font-family: 'Arvo', serif;
+     margin: 0;
+     font-size: 1.5rem;
+}
+ h1,h2,h3,h4,h5,ul,p{
+     margin: 0;
+}
+ ul{
+     list-style: none;
+     padding: 0;
+}
+ .to-top{
+     position: fixed;
+     bottom:16px;
+     color: white;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     font-size:32px;
+     background:black;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     text-decoration: none;
+     right: 50px;
+     opacity: 0;
+     z-index: 9999999999;
+}
+ .to-top.active{
+     bottom: 32px;
+     pointer-events: auto;
+     opacity: 1;
+}
+ a{
+     text-decoration: none;
+}
+/*font*/
+ @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+/*font-family: 'Arvo', serif;
+*/
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*end-Default CSS*/
+/* **************header-area**************** */
+ .header-top-area{
+     background: url(../images/banner.jpg) no-repeat, scroll, center center;
+}
+.header-top-area .navbar-brand img {
+    width: 30%;
+}
+ .header-menu ul li, .footer-menu ul li {
+     display: inline-block;
+}
+ .header-menu ul li a, .footer-menu ul li a {
+     display: inline-block;
+     overflow:hidden;
+     font-size: 1.7rem;
+     margin: .6rem 2rem;
+     color: white;
+     text-transform: uppercase;
+     font-family: 'Open Sans', sans-serif;
+}
+ .header-menu ul li a .span1{
+     color:#ef664d;
+}
+ .header-menu ul li a span, .footer-menu ul li a span{
+     position: relative;
+     height: 100%;
+     width: 100%;
+     overflow:hidden;
+     left: 0;
+     top: 0;
+     -webkit-transition: .5s;
+     -o-transition: .5s;
+     transition: .5s;
+}
+ .header-menu ul li a:hover span, .footer-menu ul li a:hover span {
+     top: -100%;
+     color: #ef664d;
+}
+ .header-menu ul li a span:after, .footer-menu ul li a span:after{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     content: "";
+     top:3rem;
+     left: 0;
+}
+ .header-menu ul li a .span1:after{
+     content: "HOME";
+}
+ .header-menu ul li a .span2:after{
+     content:"ABOUT";
+}
+ .header-menu ul li a .span3:after{
+     content:"WORK";
+}
+ .header-menu ul li a .span4:after{
+     content:"SERVICES";
+}
+ .header-menu ul li a .span5:after{
+     content:"CONTACT";
+}
+ .header-menu ul li a:hover span:after{
+     top:2rem;
+     color: #ef664d;
+}
+ .swiper .swiper-slide .banner_center{
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     padding: 16rem 0;
+     color: white;
+     text-transform: uppercase;
+}
+ .swiper .swiper-slide .banner_center h1{
+     color: white;
+     font-weight: 900;
+     font-family: 'Arvo', serif;
+     font-size: 2.5em;
+     font-family: 'Arvo', serif;
+     text-transform: uppercase;
+     font-weight: 400;
+     text-align: center;
+     padding-bottom: 2rem;
+     line-height:4.5rem;
+}
+ .swiper .swiper-slide .banner_center h1 span{
+     color: #ef664d;
+}
+ .swiper-button-next, .swiper-button-prev {
+     color: white;
+     font-size: 4rem;
+}
+ .swiper-button-prev::after, .swiper-rtl{
+     font-size: 0;
+}
+ .swiper-button-next::after, .swiper-rtl{
+     font-size: 0;
+}
+ .swiper-pagination-bullet-active {
+     background: #ef664d;
+}
+ .swiper-pagination-bullet {
+     padding: .6rem;
+     border: .2rem solid white;
+     opacity: 1;
+     margin-bottom: 4rem;
+}
+ .swiper-pagination {
+     margin-bottom: 4rem;
+}
+/*end-header-area*/
+/*about-area*/
+ .about-section{
+     padding:5rem 0;
+}
+ .about-header h2, .about-content h3, .work-text h2,.service-text h2{
+     font-size: 2.5em;
+     font-family: 'Arvo', serif;
+     text-transform: uppercase;
+     font-weight: 400;
+     color: #2a404e;
+     text-align: center;
+     padding-bottom: 2rem;
+}
+ .about-img{
+     cursor: move;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     position: relative;
+}
+ .about-img img {
+     width: auto;
+     height: auto;
+     border-radius: 50%;
+     border: .2rem inset #ef664d;
+}
+ .about-img::before {
+     position: absolute;
+     content: "";
+     width: 18rem;
+     height: 18rem;
+     background: #ef664d;
+     border-radius: 100%;
+     opacity: .5;
+     display: none;
+}
+ .about-img:after {
+     position: absolute;
+     content: "";
+     width: 18rem;
+     height: 18rem;
+     background: green;
+     border-radius: 100%;
+     opacity: .5;
+     display: none;
+}
+ .about-img:hover:after{
+     -webkit-animation: mymove .9s;
+     animation: mymove .9s;
+     -webkit-animation-iteration-count: infinite;
+     animation-iteration-count: infinite;
+     display: block;
+}
+ .about-img:hover:before{
+     -webkit-animation: mymove 1s;
+     animation: mymove 1s;
+     -webkit-animation-iteration-count: infinite;
+     animation-iteration-count: infinite;
+     display: block;
+}
+ @-webkit-keyframes mymove {
+     from {
+         -webkit-transform: rotateY(90deg);
+         transform: rotateY(90deg);
+    }
+     to {
+         opacity: 0;
+    }
+}
+ @keyframes mymove {
+     from {
+         -webkit-transform: rotateY(90deg);
+         transform: rotateY(90deg);
+    }
+     to {
+         opacity: 0;
+    }
+}
+ .about-content h3 {
+     color: #ef664d;
+     padding-bottom: .7rem;
+}
+ .about-content h3{
+     font-size: 2rem;
+}
+ .about-soniya, .read a {
+     font-size: 1.7rem;
+     color: #7e7e7e;
+     line-height: 2.4rem;
+     padding: 0 5rem;
+}
+ .read a{
+     display:block;
+     padding: 3rem 0;
+     color:#ef664d;
+}
+ .read:hover a span {
+     -webkit-animation: read 1s;
+     animation: read 1s;
+     -webkit-animation-iteration-count: infinite;
+     animation-iteration-count: infinite;
+}
+ @-webkit-keyframes read {
+     from {
+         top: 0px;
+         margin-left: 1rem;
+    }
+     to {
+         top: 200px;
+         color: green;
+    }
+}
+ @keyframes read {
+     from {
+         top: 0px;
+         margin-left: 1rem;
+    }
+     to {
+         top: 200px;
+         color: green;
+    }
+}
+/*end-about-area*/
+/*progress-bar*/
+ .progressbar{
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+ .progress {
+     width: 95%;
+     background-color: #ddd;
+     height: 2.5rem;
+     font-size: 1rem;
+}
+ .skills {
+     text-align: right;
+     color: white;
+     font-size: 1.7rem;
+     padding: 0rem 3rem;
+}
+ .html {
+    width: 90%;
+     background-color: #04AA6D;
+}
+ .css {
+    width: 80%;
+     background-color: #2196F3;
+}
+ .js {
+    width: 65%;
+     background-color: #f44336;
+}
+ .php{
+    width: 60%;
+     background-color: #808080;
+}
+ .progressbar p {
+     padding-top: 1.5rem;
+}
+ .progressbar p {
+     padding-top: 1.7rem;
+     color:#ef664d;
+}
+ .down-arrow {
+     text-align: center;
+     padding-top: 6rem;
+     font-size: 4rem;
+}
+ .down-arrow a{
+     color: #ef664d;
+}
+/*end-progressbar-area*/
+/*section-work-area*/
+ .work-section{
+     padding: 3em 0;
+     background: #2e3e4e;
+}
+ .work-text h2{
+     color: #ef664d;
+}
+ .work-text p{
+     line-height: 2.4rem;
+     font-size: 1.6rem;
+     color: #fefefe;
+     text-align: center;
+}
+ .portfolio-controls ul{
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+}
+ .portfolio-controls ul li{
+     display: inline-block;
+     padding: 5rem 0;
+     text-transform: uppercase;
+     color: #fefefe;
+     margin-right:2rem;
+     cursor: pointer;
+     font-family: 'Open Sans', sans-serif;
+     -webkit-transition: .5s;
+     -o-transition: .5s;
+     transition: .5s;
+}
+ .portfolio-controls ul li:hover{
+     color: #ef664d;
+}
+ .portfolio-area{
+     margin: auto;
+     display: -ms-grid;
+     display: grid;
+     -ms-grid-columns: 1fr 25px 1fr 25px 1fr 25px 1fr;
+     grid-template-columns: repeat(4, 1fr);
+     grid-gap: 25px;
+     position: relative;
+     z-index: 99;
+}
+ .portfolio-area .mix img {
+     width: 100%;
+     height: 100%;
+     -o-object-fit: contain;
+     object-fit: contain;
+}
+/*end-section-work-area*/
+/*service-area*/
+ .services-section-area{
+     padding: 6rem 0;
+}
+ .service-text h2{
+     color: #2a404e;
+}
+ .service-text p{
+     font-size: 1.7rem;
+     color: #7e7e7e;
+     line-height: 2.4rem;
+     text-align: center;
+     padding: 0 4rem;
+}
+ .services-area {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: horizontal;
+     -webkit-box-direction: normal;
+     -ms-flex-flow: row wrap;
+     flex-flow: row wrap;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+}
+ .service {
+     width: calc(100%/3);
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -ms-flex-flow: column wrap;
+     flex-flow: column wrap;
+     padding-top: 5rem;
+}
+ .service-icon {
+     font-size: 5rem;
+     width: 10rem;
+     height: 10rem;
+     background: tomato;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     color: white;
+     border-radius: 50%;
+}
+ .service h3 {
+     font-size: 2.5rem;
+     font-weight: 900;
+     line-height: 4rem;
+     padding-top: 1rem;
+}
+ .service p {
+     text-align: center;
+     padding: 0 3rem;
+     font-size: 1.7rem;
+     color: #7e7e7e;
+     line-height: 2.4rem;
+}
+/*end-service-area*/
+/*footer-area*/
+ .footer-secton-area{
+     padding: 5rem 0;
+     background: #2e3e4e;
+}
+ .footer-text h2{
+     color: #ef664d 
+}
+ .footer-text p{
+     color: #d5d6d7;
+}
+ .social-icon {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+     padding: 6rem 0rem;
+}
+ .footer-menu ul li a .span1:after{
+     position: absolute;
+     content: "\f099";
+     font-family: 'FontAwesome' 
+}
+ .footer-menu ul li a .span2:after{
+     position: absolute;
+     content:"\f39e";
+     font-family: 'FontAwesome' 
+}
+ .footer-menu ul li a .span3:after{
+     position: absolute;
+     content:"\f17e";
+     font-family: 'FontAwesome' 
+}
+ .footer-menu ul li a .span4:after{
+     position: absolute;
+     content:"\f0e1";
+     font-family: 'FontAwesome' 
+}
+ .footer-menu ul li a .span5:after{
+     position: absolute;
+     content:"\f232";
+     font-family: 'FontAwesome';
+}
+ .form-name {
+     display: -ms-grid;
+     display: grid;
+     -ms-grid-columns: 1fr 3rem 1fr 3rem 1fr;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap: 3rem;
+}
+ .footer-from {
+     border-bottom: .1rem solid #55626f;
+}
+ .form-name input {
+     width: 100%;
+}
+ .form-name input, .form-message input {
+     width: 100%;
+     border: none;
+     background: none;
+     border-bottom: 1px solid #d5d6d7;
+     text-transform: uppercase;
+}
+ .form-name input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+     color: #d5d6d7;
+     opacity: 1;
+}
+ .form-name input::-moz-placeholder, textarea::-moz-placeholder{
+     color: #d5d6d7;
+     opacity: 1;
+}
+ .form-name input:-ms-input-placeholder, textarea:-ms-input-placeholder{
+     color: #d5d6d7;
+     opacity: 1;
+}
+ .form-name input::-ms-input-placeholder, textarea::-ms-input-placeholder{
+     color: #d5d6d7;
+     opacity: 1;
+}
+ .form-name input::placeholder, textarea::placeholder{
+     color: #d5d6d7;
+     opacity: 1;
+}
+ .form-name input:focus, textarea:focus{
+     outline: none;
+     color: #d5d6d7;
+}
+ textarea {
+     width: 66%;
+     background: none;
+     border: none;
+     border-bottom: 1px solid #d5d6d7;
+     height: 3rem;
+     text-transform: capitalize;
+}
+ .form-message {
+     margin-top: 5rem;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+     -webkit-box-orient: horizontal;
+     -webkit-box-direction: normal;
+     -ms-flex-direction: row;
+     flex-direction: row;
+     margin-bottom: 8rem;
+}
+ .form-message input{
+     width: inherit;
+     border: none;
+     color: #ef664d;
+     -webkit-transition: .4s;
+     -o-transition: .4s;
+     transition: .4s;
+}
+ .form-message input:hover {
+     color: white;
+}
+ .coppy-write-area {
+     text-align: center;
+     font-size: 17px;
+     color: #d5d6d7;
+     font-weight: 400;
+     padding-top: 7rem;
+}
+ .coppy-write-area p a {
+     display: inline-block;
+     font-size: 2rem;
+     color: #ef664d;
+     font-weight: 400;
+     text-transform: capitalize;
+     margin-left: 1rem;
+     -webkit-transition: .5s;
+     -o-transition: .5s;
+     transition: .5s;
+}
+ .coppy-write-area p a:hover{
+     color: #d5d6d7;
+     text-decoration: underline;
+}
+ /*end-footer-area*/
